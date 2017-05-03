@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Sample</title>
+</head>
+<body>
+    <h1>Social Quiz</h1>
+    
+    <form method="POST" action="https://formspree.io/YOUR_EMAIL_HERE">
+        <fieldset>
+            <label for="client-name">Name:</label>
+            <input type="text" name="client-name" id="client-name" required>
+            <br>
+            <label>E-mail:
+                <input type="email" name="client-email" required>
+            </label>
+            <br>
+            <label>
+                Your car plate number:
+                <input type="text" name="car-number" required pattern="[A-Z]{2}[0-9]{4}[A-Z]{2}"
+                 placeholder="AA1234AA" title="AA1234AA">
+            </label>
+        </fieldset>
+        <fieldset>
+            Your gender:
+            <br>
+            <label>
+                <input type="radio" name="gender" value="male" checked>Male
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="gender" value="female">Female
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="gender" value="other">Other
+            </label>
+        </fieldset>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+</html>
